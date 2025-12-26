@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>M-Climatização</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img
+            src="./img/logo-nav.jpg"
+            alt="logo"
+            style="width: 90px; height: 90"
+          />
+        </a>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <nav class="nav-bar">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#servico">Serviço</a>
+          <a href="#endereco">Endereço</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </section>
+    </header>
+
+    <div class="home-container">
+      <section id="inicio">
+        <div class="content">
+          <h3>AR-CONDICIONADO DE QUALIDADE PARA SEU CONFORTO</h3>
+          <p>
+            Instalação, manutenção e limpeza com especialistas. Atendimento
+            rápido, serviço garantido e temperatura sempre no ponto.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="sobre" id="sobre">
+      <h2 class="title">Sobre <span>Nós</span></h2>
+      <div class="row">
+        <div class="container-image">
+          <img
+            class="image-sobre"
+            src="./img/sobre-n.png"
+            alt="sobre nos"
+            width="500"
+            height="500"
+          />
+        </div>
+
+        <div class="content">
+          <h3>O Que faz Nossos Serviços Serem Especiais</h3>
+          <p>
+            Não é só instalar um ar-condicionado. É criar um ambiente onde o
+            conforto assume o controle. Nosso diferencial está no cuidado com
+            cada detalhe: conhecimento técnico, precisão e respeito por quem vai
+            viver aquele espaço. Não chegamos apenas para executar um serviço,
+            mas para transformar o clima e a experiência do seu dia a dia.
+          </p>
+
+          <p>
+            Tecnologia, atenção e profissionalismo caminham juntos em tudo o que
+            fazemos. Do primeiro contato ao último ajuste, o objetivo é simples:
+            entregar um conforto leve, eficiente e feito pra durar.
+          </p>
+          <a href="#contato" class="btn-1">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="servico" id="servico">
+      <h2 class="title">Nossos <span>Serviços</span></h2>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/tecnico.jpg" alt="item-1" width="150" height="150" />
+          <h3>SERVIÇO TÉCNICO</h3>
+
+          <div class="tooltip">
+            <button class="btn-1" onclick="toggleTooltip(this)">
+              Saiba Mais
+            </button>
+
+            <span class="tooltip-text">
+              • Avaliação do ambiente e <br />
+              da instalação existente. <br />
+              • Identificação de problemas,<br />
+              medição, análise de capacidade térmica<br />
+              e orientação ao cliente.
+            </span>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="./img/instalacao.png"
+            alt="item-2"
+            width="150"
+            height="150"
+          />
+          <h3>INSTALAÇÃO DE AR-CONDICIONADO</h3>
+
+          <div class="tooltip">
+            <button class="btn-1" onclick="toggleTooltip(this)">
+              Saiba Mais
+            </button>
+
+            <span class="tooltip-text">
+              • Instalação completa de<br />
+              aparelhos novos.<br />
+              • Fixação da unidade interna e externa, nivelamento,<br />
+              testes e verificação de funcionamento. <br />
+              • Trabalhar com modelos split, <br />
+              inverter, multi-split e outros.
+            </span>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/infra.png" alt="item-3" width="150" height="150" />
+          <h3>INSTALAÇÃO DE INFRAESTRUTURA</h3>
+
+          <div class="tooltip">
+            <button class="btn-1" onclick="toggleTooltip(this)">
+              Saiba Mais
+            </button>
+
+            <span class="tooltip-text">
+              • Planejamento e preparação dos<br />
+              pontos do ar-condicionado antes<br />
+              da obra da casa ou prédio.<br />
+              • Passagem de tubulação de cobre,<br />
+              dreno, elétrica e suporte adequado.
+              <br />
+              • Deixar tudo pronto para<br />
+              receber a máquina futuramente,<br />
+              evitando transtornos.
+            </span>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="./img/preventiva.jpg"
+            alt="item-4"
+            width="150"
+            height="150"
+          />
+          <h3>MANUTENÇÃO PREVENTIVA E CORRETIVA</h3>
+
+          <div class="tooltip">
+            <button class="btn-1" onclick="toggleTooltip(this)">
+              Saiba Mais
+            </button>
+
+            <span class="tooltip-text">
+              • Revisão geral do aparelho, limpeza,<br />
+              testes de pressão e funcionamento.<br />
+              • Identificação e troca de peças com defeito<br />
+              (ex.: capacitor, motor, placa, etc.).<br />
+              • Prevenção de falhas, redução de consumo de<br />
+              energia e aumento da durabilidade.
+            </span>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/limpeza.png" alt="item-5" width="150" height="150" />
+          <h3>LIMPEZA DE AR-CONDICIONADO</h3>
+          <div class="tooltip">
+            <button class="btn-1" onclick="toggleTooltip(this)">
+              Saiba Mais
+            </button>
+            <span class="tooltip-text">
+              • Limpeza profunda da <br />serpentina com jato de água.<br />
+              • Limpeza da bandeja, desobstrução do dreno<br />
+              e aplicação de bactericida.<br />
+              • Redução de odores, melhora da<br />
+              qualidade do ar e aumento da vida<br />
+              útil do aparelho.</span
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/visita.png" alt="item-6" width="150" height="150" />
+          <h3>VISITA</h3>
+          <div class="tooltip">
+            <button class="btn-1" onclick="toggleTooltip(this)">
+              Saiba Mais
+            </button>
+            <span class="tooltip-text"
+              >• Olhar geral do Equipamento<br />
+              • Verificação de vazamento de gás <br />
+              • chacagem do nivel de gás <br />
+              • Análise elétrica <br />
+              • orientações</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="endereco" id="endereco">
+      <h2 class="title">Em Toda <span>SP</span></h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.9583713302754!2d-46.65247922118736!3d-23.56494507836886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b8631b6a51%3A0x69137f2e2e92e733!2sBurguer%20%2B!5e0!3m2!1spt-BR!2sbr!4v1761698412795!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section id="contato" class="contatos">
+      <h2 class="title">Entre em <span>Contato</span></h2>
+      <form
+        class="formulario-contato"
+        id="formulario"
+        onsubmit="enviarwhats(event)"
+      >
+        <div class="grupo-form">
+          <input placeholder="nome" class="campo-form" id="nome" />
+        </div>
+
+        <div class="grupo-form">
+          <textarea
+            class="campo-form"
+            placeholder="Digite Sua Mensagem"
+            rows="4"
+            id="mensagem"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="botao-form">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <section class="footer">
+      <div class="share">
+        <a
+          href="https://www.instagram.com/marcosarclimatizacao?igsh=cnloZW95aDRwaDUx"
+          target="_blank"
+        >
+          <img src="./img/insta.svg" alt="" />
+        </a>
+        <a href="https://wa.me/5511958369107" target="_blank">
+          <img src="./img/zapzap.svg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <script>
+      function enviarwhats(event) {
+        event.preventDefault(); // impede o form de recarregar a página
+
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+
+        const telefone = "5511958369107"; // seu número aqui (com DDI 55)
+
+        const texto = `Olá! Me chamo ${nome}.\n\n${mensagem}`;
+
+        const mensagemCodificada = encodeURIComponent(texto);
+
+        const url = `https://wa.me/${telefone}?text=${mensagemCodificada}`;
+
+        window.open(url, "_blank");
+
+        if (nome === "" || mensagem === "") {
+          alert("Preencha todos os campos ✍️");
+          return;
+        }
+      }
+    </script>
+
+    <script>
+      function toggleTooltip(button) {
+        const tooltip = button.closest(".tooltip");
+
+        // fecha todos antes
+        document.querySelectorAll(".tooltip").forEach((t) => {
+          if (t !== tooltip) t.classList.remove("active");
+        });
+
+        // alterna o atual
+        tooltip.classList.toggle("active");
+      }
+
+      // fecha se clicar fora
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".tooltip")) {
+          document
+            .querySelectorAll(".tooltip")
+            .forEach((t) => t.classList.remove("active"));
+        }
+      });
+    </script>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-bar").classList.toggle("ativo");
+      }
+    </script>
+  </body>
+</html>

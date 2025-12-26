@@ -1,0 +1,15 @@
+cor de fundo - #f4f5f6
+
+linha navbar - #d5deef
+
+letras navbar- #000000
+
+textos - #1c2c3d
+
+títulos claro - #73c1e1
+
+títulos escuro - #5ba0c9
+
+botões - #73c1e1
+
+card-box- #b5c5d4
